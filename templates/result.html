@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Comment Analysis Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/result.css">
+</head>
+<body>
+    <h1>YouTube Comment Analysis Result</h1>
+    <table>
+        <tr>
+            <th>Comment</th>
+            <th>Abusive</th>
+        </tr>
+        {% for comment_data in comments_data %}
+        <tr>
+            <td>{{ comment_data['comment'] }}</td>
+            <td>{{ comment_data['tokens'] }}</td>
+            <td>{{ comment_data['abusive'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

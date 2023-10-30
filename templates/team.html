@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Comment Abusivity Analyzer - Team</title>
+    <link rel="stylesheet" type="text/css" href="/static/team.css">
+</head>
+<body>
+    <header>
+        <h1>YouTube Comment Abusivity Analyzer</h1>
+        <nav>
+            <ul class="list">
+                <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('team') }}">Our Team</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2><i>Our Team</i></h2>
+        <div class="team-member">
+
+            <div class="imgs">
+            <img src="{{ url_for('static', filename='pictures/abi_photo.jpeg') }}" alt="S. Abinaya">
+            <h3>S. Abinaya</h3>
+            </div>
+            
+            <div class="imgs">
+            <img src="{{ url_for('static', filename='pictures/karthika_photo.jpeg') }}" alt="P. Karthika">
+            <h3>P. Karthika</h3>
+            </div>
+            
+            <div class="imgs">
+            <img src="{{ url_for('static', filename='pictures/yuthi_photo.jpg') }}" alt="M. Yuthikshaa">
+            <h3>M. Yuthikshaa</h3>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

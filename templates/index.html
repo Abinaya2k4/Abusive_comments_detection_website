@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Comment Abusivity Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <header>
+        <h1>YouTube Comment Abusivity Analyzer</h1>
+        <nav>
+<ul class="list">
+    <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('team') }}">Our Team</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+</ul>
+
+        </nav>
+    </header>
+    <main>
+        <form action="/analyze" method="post">
+            <label for="video_link">Enter the complete YouTube video link:</label>
+            <input type="text" name="video_link" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+    </main>
+</body>
+</html>
